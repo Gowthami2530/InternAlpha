@@ -1,1 +1,1 @@
-# [E-Commerce Landing Page](https://dazzling-paprenjak-fa4529.netlify.app/)
+# [E-Commerce Landing Page](https://earnest-pixie-43fe46.netlify.app/)
