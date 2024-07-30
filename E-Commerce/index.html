@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-Commerce</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/883244f25c.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- nav section start -->
+    <header id="nav">
+        <div class="logo">
+            <img src="./Assets/Icons/fotor-2024072117233.png" alt="Logo">
+        </div>
+        <ul class="nav-bar">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#Arrival">NEW ARRIVAL</a></li>
+            <li><a href="#product">PRODUCTS</a></li>
+            <li><a href="#reviews">REVIEWS</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart"></i>
+            <i class="fa-solid fa-user" id="user"></i>
+        </div>
+        <div class="search-box">
+            <input type="search" placeholder="Search here"> 
+        </div>
+        <!-- Cart section start -->
+        <div id="cart-box" class="cart-box">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h2>Total: ₹<span id="cart-total">0.00</span></h2>
+                <a href="#"><button class="button">PLACE ORDER</button></a>
+            </div>
+        </div>
+        <!-- Login Page start -->
+        <div class="userform">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Login" class="login">
+            <p>Forget Password <a href="">Reset Now</a></p>
+            <p>Don't have Account? <a href="">Create Account</a></p>
+        </div>
+         <!-- Login Page end -->
+    </header>
+      <!-- nav section end -->
+     <!-- Home section Start -->
+    <section id="home">
+        <div class="home-matter">
+            <span>Welcome to Your Ultimate Shopping Destination!</span>
+            <p>Discover the latest trends and timeless classics with our exclusive collections. Enjoy a seamless shopping experience, great deals, and secure checkout. Dive into a world of fashion and find your new favorite pieces today!</p>
+            <a href="#product"><button class="btn">SHOP NOW</button></a>
+        </div>
+        <div class="homeimage">
+            <img src="./Assets/Photos/Screenshot 2024-07-21 133004.png" alt="Home Image">
+        </div>
+    </section>
+    <!-- Home section end --> 
+    <!-- NEW Arrival Section Start -->
+    <section id="Arrival">
+        <div class="heading">
+            <h2>NEW <span>ARRIVAL</span></h2>
+        </div>
+           <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./Assets/Photos/Screenshot 2024-07-27 215107.png" alt="">
+                        </div>
+                        <div class="buynow">
+                          <a href="#"><button class="button">BUY NOW</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./Assets/Photos/3owyb_512.jpg"alt="">
+                        </div>
+                        <div class="buynow">
+                          <a href="#"><button class="button">BUY NOW</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./Assets/Photos/Screenshot 2024-07-27 215132.png" alt="" >
+                        </div>
+                        <div class="buynow">
+                          <a href="#"><button class="button">BUY NOW</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./Assets/Photos/Screenshot 2024-07-27 215132.png" alt="">
+                        </div>
+                        <div class="buynow">
+                          <a href="#"><button class="button">BUY NOW</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./Assets/Photos/Screenshot 2024-07-27 215132.png" alt="">
+                        </div>
+                        <div class="buynow">
+                          <a href="#"><button class="button">BUY NOW</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>      
+    </section>
+    <!-- NEW Arrival Section end -->
+    <!-- Product section  start-->
+     <section id="product">
+        <div class="heading">
+            <h2>OUR<span>PRODUCTS</span></h2>
+        </div>
+        <div class="product-container">
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/3owyb_512.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Hoodie</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹550</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-30 162030.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Crop Top</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <!-- <p>Size:Xl</p> -->
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹590</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-27 215349.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>T-Shrit</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹400</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-30 162106.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Shirt</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹500</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>  
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-30 162447.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Plazzo Set</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹450</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>  
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-30 162347.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Kurta</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹550</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>  
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-30 162133.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Saree</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹900</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>  
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/Screenshot 2024-07-30 163052.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Jeans</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹800</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>  
+            <div class="box">
+                <div class="card">
+                <img src="./Assets/Photos/b0f2y_512.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="cardtext">
+                    <h2>Western Frock</h2>
+                    <div class="size">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price">
+                    <span>₹1000</span>
+                    <i class="fa-solid fa-cart-shopping" id="cart1"></i>
+                    </div>
+                </div> 
+            </div>    
+        </div>
+     </section>
+     <!-- Product section  end-->
+      <!-- Reviews Section Start -->
+    <section id="reviews">
+        <div class="heading">
+            <h2>OUR<span>CUSTOMER'S</span></h2>
+        </div>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-box">
+                <img src="./Assets/Photos/albert-dera-ILip77SbmOE-unsplash.jpg" alt="">
+               </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Overall, my experience with AG Website was outstanding. The combination of a user-friendly website, fast delivery, high-quality product, and excellent customer service makes them my go-to choice for online shopping. I highly recommend AG Website to anyone looking for reliable and top-notch service.</p>
+                <h2>Sarah</h2>
+            </div>
+            <div class="review-card">
+                <div class="review-box">
+                <img src="./Assets/Photos/karolis-milisauskas-kB1itx3ABxE-unsplash.jpg" alt="">
+               </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Overall, my experience with AG Website was outstanding. The combination of a user-friendly website, fast delivery, high-quality product, and excellent customer service makes them my go-to choice for online shopping. I highly recommend AG Website to anyone looking for reliable and top-notch service.</p>
+                <h2>karolis</h2>
+            </div>
+            <div class="review-card">
+                <div class="review-box">
+                <img src="./Assets/Photos/albert-dera-ILip77SbmOE-unsplash.jpg" alt="">
+               </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Overall, my experience with AG Website was outstanding. The combination of a user-friendly website, fast delivery, high-quality product, and excellent customer service makes them my go-to choice for online shopping. I highly recommend AG Website to anyone looking for reliable and top-notch service.</p>
+                <h2>Sarah</h2>
+            </div>
+        </div>
+       </section>
+        <!-- Reviews Section End -->
+         <!-- Footer section start -->
+          <section id="footer">
+            <div class="footer-container">
+                <h2>AG Online Shopping</h2>
+                <p>At AG  Online Shopping , we are dedicated to bringing you the best in fashion. Our mission is to provide high-quality products at competitive prices while ensuring a seamless shopping experience.</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/gowthami.rose.56"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gowthami_2530/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Support</h3>
+                <li><a >Product</a></li>
+                <li><a >Help & Support</a></li>
+                <li><a >Reture Policy</a></li>
+                <li><a >Terms of Use</a></li>
+                <li><a >FAQ</a></li>
+            </div>
+            <div class="footer-box">
+                <h3>Our Branches</h3>
+                <li><a>Indian</a></li>
+                <li><a>Canada</a></li>
+                <li><a>United States</a></li>
+                <li><a>Japan</a></li>
+            </div>
+            <div class="footer-box">
+                <h3>Payment Method</h3>
+                <div class="payment">
+                    <li><a ><i class="fa-brands fa-cc-visa"></i></a></li>
+                    <li><a ><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                    <li><a ><i class="fa-brands fa-paypal"></i></a></li>
+                    <li><a ><i class="fa-brands fa-google-pay"></i></a></li>
+                </div>
+
+            </div>
+          </section>
+          <!-- Footer section End -->
+          <div class="copyright">
+            <p>Copyright &copy; 2024; Designed By Akula Gowthami</p>
+         </div>
+          
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
